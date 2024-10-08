@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - dechet1
+  - dechet2
+  - dechet3
   layers:
   - Default
   - TransparentFX
