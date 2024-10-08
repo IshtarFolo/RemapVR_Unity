@@ -7,6 +7,7 @@ TagManager:
   - dechet1
   - dechet2
   - dechet3
+  - pointage
   layers:
   - Default
   - TransparentFX

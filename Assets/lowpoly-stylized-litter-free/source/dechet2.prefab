@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 2154645328127649561}
   m_Layer: 0
   m_Name: dechet2
-  m_TagString: dechet2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,6 +498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 585ac02f9968d18409f9fa259c36eb92,
+        type: 3}
+      propertyPath: m_TagString
+      value: dechet2
       objectReference: {fileID: 0}
     - target: {fileID: -2577548232221058511, guid: 585ac02f9968d18409f9fa259c36eb92,
         type: 3}

@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 4987962276752471779}
   m_Layer: 0
   m_Name: dechet3
-  m_TagString: dechet3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,6 +533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919683763462532184, guid: 585ac02f9968d18409f9fa259c36eb92,
+        type: 3}
+      propertyPath: m_TagString
+      value: dechet3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
