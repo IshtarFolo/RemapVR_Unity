@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OG_Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LaMeilleureScene!3.unity
     guid: 395844056e5c39a4ba1e38c3b5e2cf8d
+  - enabled: 1
+    path: Assets/Scenes/jeVeuxDormirVr.unity
+    guid: 617a2e088a89c034197ce46b42ce4669
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0e7658a2467f9474fa0bd3920a780043,
       type: 2}

@@ -10,13 +10,18 @@ public class Points : MonoBehaviour
 
     public TextMeshProUGUI lesPoints;
 
+    public AudioClip dechetFin;
+    public AudioClip citrouilleFin;
+
     void Start()
     {
         dechets.AddRange(GameObject.FindGameObjectsWithTag("dechet1"));
         dechets.AddRange(GameObject.FindGameObjectsWithTag("dechet2"));
         dechets.AddRange(GameObject.FindGameObjectsWithTag("dechet3"));
-
+        //Tag pour la citrouille qui enlèvera des points
+        dechets.AddRange(GameObject.FindGameObjectsWithTag("citrouille"));
         GameObject pointageObject = GameObject.FindGameObjectWithTag("pointage");
+
         if (pointageObject != null)
         {
             lesPoints = pointageObject.GetComponent<TextMeshProUGUI>();
@@ -36,8 +41,17 @@ public class Points : MonoBehaviour
             infoTrigger.gameObject.CompareTag("dechet3"))
         {
             pointage++;
+            GetComponent<AudioSource>().PlayOneShot(dechetFin, 1f);
             Destroy(infoTrigger.gameObject);
             Debug.Log("Trigger entered by: " + infoTrigger.gameObject.name); // Debug log
+        }
+
+        //Jeter la citrouille enlevera des points
+        else if (infoTrigger.gameObject.CompareTag("citrouille"))
+        {
+            pointage--;
+            GetComponent<AudioSource>().PlayOneShot(citrouilleFin, 1f);
+            Destroy(infoTrigger.gameObject);
         }
     }
 
@@ -45,7 +59,7 @@ public class Points : MonoBehaviour
     {
         if (lesPoints != null)
         {
-            lesPoints.text = pointage.ToString();
+            lesPoints.text = "Ramasse les déchets !\r\nNe jette pas les citrouilles, ou tu seras le prochain sacrifice !\r\n\r\n" + pointage.ToString() + "points";
         }
     }
 }
